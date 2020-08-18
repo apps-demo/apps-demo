@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
   <!-- jQuery UI required by datepicker editable -->
   <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
@@ -59,7 +60,7 @@
         <ul class="nav" id="sidebar-nav-menu">
           <li class="menu-group text-white">Rawat Darurat/Rawat Jalan</li>
           <li><a href="forms-registrasi-igd-irj.html" class=""><i class="ti-home"></i> <span class="title">Registrasi Pasien</span></a></li>
-          <li><a href="data-pasien-irj-igd.html" class=""><i class="ti-desktop"></i> <span class="title">Data Pasien IRJ/IGD</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-desktop"></i> <span class="title">Data Pasien IRJ/IGD</span></a></li>
 
           <li class="menu-group text-white">Rawat Inap</li>
           <li><a href="typography.html" class=""><i class="ti-home"></i> <span class="title">Pendaftaran Rawat Inap</span></a></li>
@@ -96,7 +97,7 @@
 
         <div class="content-heading">
           <div class="heading-left">
-            <h1 class="page-title">Welcome to Klorofil Pro</h1>
+            <h1 class="page-title">Data Pasien Rawat Jalan/ Rawat Darurat</h1>
             <p class="page-subtitle">Bootstrap admin dashboard template with drag and drop panel.</p>
           </div>
           <nav aria-label="breadcrumb">
@@ -109,122 +110,49 @@
         </div>
 
         <div class="container-fluid">
-          <!-- TOP METRICS -->
-          <div class="row">
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-orange"><i class="fa fa-area-chart"></i></span>
-                <div class="right">
-                  <span class="value">$3642 <i class="change-icon change-up fa fa-sort-up text-indicator-green"></i></span>
-                  <span class="title">PROFIT <span class="change text-indicator-green">(+ $254)</span></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-lightseagreen"><i class="fa fa-shopping-cart"></i></span>
-                <div class="right">
-                  <span class="value">$8740 <i class="change-icon change-up fa fa-sort-up text-indicator-green"></i></span>
-                  <span class="title">REVENUE <span class="change text-indicator-green">(+ $364)</span></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-blue2"><i class="fa fa-user"></i></span>
-                <div class="right">
-                  <span class="value">132567 <i class="change-icon change-down fa fa-sort-down text-indicator-red"></i></span>
-                  <span class="title">TOTAL USER <span class="change text-indicator-red">(- 23)</span></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-purple"><i class="fa fa-envelope"></i></span>
-                <div class="right">
-                  <span class="value">56.72% <i class="change-icon change-up fa fa-sort-up text-indicator-green"></i></span>
-                  <span class="title">CLICK <span class="change text-indicator-green">(+ 12.64%)</span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END TOP METRICS -->
 
           <div class="row sortable-grid">
             <!-- CHAT SUPPORT -->
             <div class="col-md-12 sortable-item">
-              <div class="card">
-                <h3 class="card-header">Jadwal Operasi</h3>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <table class="table table-minimal table-chat-support datatable mb-0">
-                        <thead>
-                          <tr><th>VISITOR</th><th>PAGE</th><th>DEVICE</th><th>BROWSER</th><th>ACTION</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover" data-visitor-name="Bruce Evans" data-visitor-img="assets/images/people/male1.png"><i class="fa fa-vcard-o"></i></span> <a href="#">Bruce</a></td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/men/shoes">Shoes | Men Apparels</span></td>
-                            <td><i class="fa fa-desktop"></i></td>
-                            <td><i class="fa fa-firefox firefox-color"></i> Firefox</td>
-                            <td><button class="btn btn-success btn-sm">RESPOND CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/how-to/shop">How to shop | FAQ | Help</span></td>
-                            <td><i class="fa fa-desktop"></i></td>
-                            <td><i class="fa fa-edge edge-color"></i> Edge</td>
-                            <td><button class="btn btn-outline-light btn-sm">INITIALIZE CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover" data-visitor-name="Joey Felicia" data-visitor-img="assets/images/people/female1.png"><i class="fa fa-vcard-o"></i></span> <a href="#">Joey</a></td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/men/dress">Dress | Women Apparels</span></td>
-                            <td><i class="fa fa-mobile"></i></td>
-                            <td><i class="fa fa-chrome chrome-color"></i> Chrome</td>
-                            <td><button class="btn btn-danger btn-sm">CLOSE CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/men/shoes">Shoes | Men Apparels</span></td>
-                            <td><i class="fa fa-desktop"></i></td>
-                            <td><i class="fa fa-safari safari-color"></i> Safari</td>
-                            <td><button class="btn btn-success btn-sm">RESPOND CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/checkout">Checkout | My Online Shop</span></td>
-                            <td><i class="fa fa-mobile"></i></td>
-                            <td><i class="fa fa-window-maximize"></i> Other Browser</td>
-                            <td><button class="btn btn-danger btn-sm">CLOSE CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/how-to/pay">Payment Method | FAQ</span></td>
-                            <td><i class="fa fa-desktop"></i></td>
-                            <td><i class="fa fa-edge edge-color"></i> Edge</td>
-                            <td><button class="btn btn-outline-light btn-sm">INITIALIZE CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/checkout">Checkout | My Online Shop</span></td>
-                            <td><i class="fa fa-mobile"></i></td>
-                            <td><i class="fa fa-firefox firefox-color"></i> Firefox</td>
-                            <td><button class="btn btn-outline-light btn-sm">INITIALIZE CHAT</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
-                            <td><span class="page-tooltip" data-title="https://myonlineshop.com/checkout">Checkout | My Online Shop</span></td>
-                            <td><i class="fa fa-mobile"></i></td>
-                            <td><i class="fa fa-firefox firefox-color"></i> Firefox</td>
-                            <td><button class="btn btn-outline-light btn-sm">INITIALIZE CHAT</button></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+              <!-- BASIC DATATABLE -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Data Pasien yang sedang dirawat:</h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="datatable-basic" class="table table-hover table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Nama</th>
+                      <th>Tanggal Lahir</th>
+                      <th>DPJP</th>
+                      <th>Tanggal Masuk</th>
+                      <th>Tindakan</th>
+                      <th>Diagnosa</th>
+                      <th>RAD</th>
+                      <th>LAB</th>
+                      <th>PULANGKAN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Fulanah binti Fulan</td>
+                      <td>01 September 1990</td>
+                      <td>Dr. Fulan</td>
+                      <td>18 Agustus 2020</td>
+                      <td><a href="" class="btn btn-sm btn-primary"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-danger"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-success"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-warning"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-info"><i class="ti ti-home"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </div>
+          </div>
+          <!-- END BASIC DATATABLE -->
             </div>
             <!-- END CHAT SUPPORT -->
           </div>
@@ -360,6 +288,9 @@
 
   <!-- Vendor -->
   <script src="assets/js/vendor.min.js"></script>
+  <!-- Datables Core -->
+  <script src="assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
+  <script src="assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
 
   <!-- Plugins -->
   <script src="assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
@@ -394,6 +325,7 @@
   <!-- Init -->
   <script src="assets/js/pages/dashboard.init.js"></script>
   <script src="assets/js/pages/ui-dragdroppanel.init.min.js"></script>
+  <script src="assets/js/pages/tables-dynamic.init.min.js"></script>
 
   <!-- App -->
   <script src="assets/js/app.min.js"></script>

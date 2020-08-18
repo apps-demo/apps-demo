@@ -87,14 +87,12 @@
         <div class="content-heading">
           <div class="heading-left">
             <h1 class="page-title">Welcome to Apps</h1>
-            <p class="page-subtitle">Manajemen Ruangan</p>
+            <p class="page-subtitle">Manajemen Diagnosa</p>
           </div>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../core/index.html"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Ruang</a></li>
-              <li class="breadcrumb-item"><a href="index.html">Bangsal</a></li>
-              <li class="breadcrumb-item active">Kamar</li>
+              <li class="breadcrumb-item active">DPJP</li>
             </ol>
           </nav>
         </div>
@@ -103,29 +101,63 @@
 
           <div class="row sortable-grid">
             <!-- CHAT SUPPORT -->
-            <div class="col-md-10 sortable-item">
-              <!-- basic inputs -->
+            <div class="col-md-12 sortable-item">
               <div class="card">
-                <div class="card-header">Form Bangsal</div>
+                <h3 class="card-header">Daftar DPJP</h3>
                 <div class="card-body">
-                  <form>
-                    <div class="form-group row">
-                      <label class="col-md-2 col-form-label">Nama Bangsal</label>
-                      <div class="col-md-10">
-                        <input type="text" class="form-control" placeholder="text field" value="Melati 1">
-                      </div>
+                  <div class="row">
+                    <div class="col-md-8"></div>
+                    <div align="right" class="col-md-4"><a href="dpjp-form.html" class="btn btn-success btn-md"><span class="ti-plus"></span>  Tambah DPJP</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <table class="table table-minimal table-chat-support datatable mb-0">
+                        <thead>
+                          <tr><th>NO. KEDOKTERAN</th><th>INISIAL</th><th>NAMA</th><th>AKSI</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="#">19198111</a></td>
+                            <td>AS</td>
+                            <td>Dr. Ariyani Safitri</td>
+                            <td><a href="dpjp-form.html" class="btn btn-success btn-sm">Edit</a>
+                              <button class="btn btn-danger btn-sm">Hapus</button></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">19198231</a></td>
+                            <td>AW</td>
+                            <td>Dr. Ardi Wibowo</td>
+                            <td><a href="dpjp-form.html" class="btn btn-success btn-sm">Edit</a>
+                              <button class="btn btn-danger btn-sm">Hapus</button></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">19198111</a></td>
+                            <td>WS</td>
+                            <td>Dr. Wahyu Saputra</td>
+                            <td><a href="dpjp-form.html" class="btn btn-success btn-sm">Edit</a>
+                              <button class="btn btn-danger btn-sm">Hapus</button></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">19761831</a></td>
+                            <td>FS</td>
+                            <td>Dr. Fara Sati</td>
+                            <td><a href="dpjp-form.html" class="btn btn-success btn-sm">Edit</a>
+                              <button class="btn btn-danger btn-sm">Hapus</button></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">111983699</a></td>
+                            <td>RM</td>
+                            <td>Dr. Ridwan Malik</td>
+                            <td><a href="dpjp-form.html" class="btn btn-success btn-sm">Edit</a>
+                              <button class="btn btn-danger btn-sm">Hapus</button></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
                     </div>
-
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        <a href="index.html" class="btn btn-success btn-md">Simpan</a>
-                        <a href="javascript:history.back()" class="btn btn-secondary btn-md">Batal</a>
-                      </div>
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
-              <!-- end basic inputs -->
             </div>
             <!-- END CHAT SUPPORT -->
           </div>

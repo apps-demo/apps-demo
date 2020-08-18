@@ -93,92 +93,39 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
               <li class="breadcrumb-item"><a href="#">Ruang</a></li>
-              <li class="breadcrumb-item active">Bangsal</li>
+              <li class="breadcrumb-item"><a href="index.html">Bangsal</a></li>
+              <li class="breadcrumb-item active">Kamar</li>
             </ol>
           </nav>
         </div>
 
         <div class="container-fluid">
-          <!-- TOP METRICS -->
-          <div class="row">
-            <div class="col-sm-6 col-lg-4">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-orange"><i class="ti-folder"></i></span>
-                <div class="right">
-                  <span class="value">4 <i class="change-icon change-up fa fa-sort-up text-indicator-green"></i></span>
-                  <span class="title">Bangsal</span></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-lightseagreen"><i class="ti-folder"></i></span>
-                <div class="right">
-                  <span class="value">4 <i class="change-icon change-up fa fa-sort-up text-indicator-green"></i></span>
-                  <span class="title">Kelas <span class="change text-indicator-green"></span></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="widget widget-metric_1 animate">
-                <span class="icon-wrapper custom-bg-blue2"><i class="ti-folder"></i></span>
-                <div class="right">
-                  <span class="value">110 <i class="change-icon change-up fa fa-sort-up text-indicator-green"></i></span>
-                  <span class="title">Kamar </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END TOP METRICS -->
 
           <div class="row sortable-grid">
             <!-- CHAT SUPPORT -->
-            <div class="col-md-12 sortable-item">
+            <div class="col-md-10 sortable-item">
+              <!-- basic inputs -->
               <div class="card">
-                <h3 class="card-header">Daftar Bangsal</h3>
+                <div class="card-header">Form Bangsal</div>
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-10"></div>
-                    <div align="right" class="col-md-2"><a href="bangsal-form.html" class="btn btn-success btn-md"><span class="ti-plus"></span>  Tambah Bangsal</a></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <table class="table table-minimal table-chat-support datatable mb-0">
-                        <thead>
-                          <tr><th>NAMA BANGSAL</th><th>JUMLAH KAMAR</th><th>AKSI</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><a href="kamar.html">ICU</a></td>
-                            <td><span class="page-tooltip"><a href="kamar.html">10 Kamar</a></span></td>
-                            <td><a href="bangsal-form.html" class="btn btn-success btn-sm">Edit</a>
-                              <button class="btn btn-danger btn-sm">Hapus</button></td>
-                          </tr>
-                          <tr>
-                            <td><a href="kamar.html">HCU</a></td>
-                            <td><span class="page-tooltip"><a href="kamar.html">10 Kamar</a></span></td>
-                            <td><a href="bangsal-form.html" class="btn btn-success btn-sm">Edit</a>
-                              <button class="btn btn-danger btn-sm">Hapus</button></td>
-                          </tr>
-                          <tr>
-                            <td><a href="kamar.html">Melati 3</a></td>
-                            <td><span class="page-tooltip"><a href="kamar.html">40 Kamar</a></span></td>
-                            <td><a href="bangsal-form.html" class="btn btn-success btn-sm">Edit</a>
-                              <button class="btn btn-danger btn-sm">Hapus</button></td>
-                          </tr>
-                          <tr>
-                            <td><a href="kamar.html">Melati 1</a></td>
-                            <td><span class="page-tooltip"><a href="kamar.html">30 Kamar</a></span></td>
-                            <td><a href="bangsal-form.html" class="btn btn-success btn-sm">Edit</a>
-                              <button class="btn btn-danger btn-sm">Hapus</button></td>
-                          </tr>
-                          
-                        </tbody>
-                      </table>
+                  <form>
+                    <div class="form-group row">
+                      <label class="col-md-2 col-form-label">Nama Bangsal</label>
+                      <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="text field" value="Melati 1">
+                      </div>
                     </div>
-                  </div>
+
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <a href="index.html" class="btn btn-success btn-md">Simpan</a>
+                        <a href="javascript:history.back()" class="btn btn-secondary btn-md">Batal</a>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
+              <!-- end basic inputs -->
             </div>
             <!-- END CHAT SUPPORT -->
           </div>

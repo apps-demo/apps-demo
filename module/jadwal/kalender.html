@@ -7,17 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
   <!-- jQuery UI required by datepicker editable -->
-  <link href="../../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- JQVMap css -->
-  <link href="../../assets/plugins/jqvmap/jqvmap.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- Bootstrap Tour css -->
-  <link href="../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.min.css" rel="stylesheet" type="text/css" />
 
   <!-- App css -->
   <link href="../../assets/css/bootstrap-custom.min.css" rel="stylesheet" type="text/css" />
   <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+  <link href="../../assets/plugins/full-calendar/air-datepicker.css" rel="stylesheet" type="text/css" />
+  <link href="../../assets/plugins/full-calendar/calendar.css" rel="stylesheet" type="text/css" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
@@ -84,85 +79,88 @@
 
           <div class="row sortable-grid">
             <!-- CHAT SUPPORT -->
-            <div class="col-md-12 sortable-item">
+            <div class="col-md-12">
               <div class="btn-group">
-                <a href="index.html" class="btn btn-dark">Tabel</a>
-                <a href="kalender.html" class="btn btn-light">Kalender</a>
+                <a href="index.html" class="btn btn-light">Tabel</a>
+                <a href="kalender.html" class="btn btn-dark">Kalender</a>
               </div>
               <br><br>
-              <div class="card">
-                <h3 class="card-header">Jadwal Operasi</h3>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <table class="table table-minimal table-chat-support datatable mb-0">
-                        <thead>
-                          <tr>
-                            <th>PASIEN</th>
-                            <th>DIAGNOSA</th>
-                            <th>JADWAL</th>
-                            <th>DPJP</th>
-                            <th>ACTION</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover" data-visitor-name="Bruce Evans" data-visitor-img="../../assets/images/people/male1.png"><i class="fa fa-vcard-o"></i></span> <a href="#">Denis Ressa Putra</a>
-                              <br><strong>32 Tahun</strong>
-                              <br>(01505892)
-                            </td>
-                            <td width="40%">Post laparotomy reseksi colon descenden + colostomy ai peritonitis generalaisata ec perforasi colon descendens DPH 2</td>
-                            <td>
-                              <strong>20/08/2020</strong>
-                              <br>13.00
-                            </td>
-                            <td><a href="#">AR</a></td>
-                            <td><button class="btn btn-success btn-sm">Detail</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover" data-visitor-name="Bruce Evans" data-visitor-img="../../assets/images/people/male1.png"><i class="fa fa-vcard-o"></i></span> <a href="#">Samin</a>
-                              <br><strong>42 Tahun</strong>
-                              <br>(015088711)
-                            </td>
-                            <td width="40%">Post laparotomy eksplorasi graham patch procedure ai peritonitis generalisata ec perforasi gaster DPH 4</td>
-                            <td>
-                              <strong>20/08/2020</strong>
-                              <br>17.00
-                            </td>
-                            <td><a href="#">WS</a></td>
-                            <td><button class="btn btn-success btn-sm">Detail</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover" data-visitor-name="Bruce Evans" data-visitor-img="../../assets/images/people/male1.png"><i class="fa fa-vcard-o"></i></span> <a href="#">Suparmi</a>
-                              <br><strong>37 Tahun</strong>
-                              <br>(0150585503)
-                            </td>
-                            <td width="40%">Post laparotomy eksplorasi + Hemicolectomy + Anastomose illeotransvertomy end to side + PA DPH 7</td>
-                            <td>
-                              <strong>21/08/2020</strong>
-                              <br>09.00
-                            </td>
-                            <td><a href="#">AR</a></td>
-                            <td><button class="btn btn-success btn-sm">Detail</button></td>
-                          </tr>
-                          <tr>
-                            <td><span class="popover-profile" data-toggle="popover" data-visitor-name="Bruce Evans" data-visitor-img="../../assets/images/people/male1.png"><i class="fa fa-vcard-o"></i></span> <a href="#">Sumitro</a>
-                              <br><strong>48 Tahun</strong>
-                              <br>(01505117)
-                            </td>
-                            <td width="40%">Adeno Ca recti metas paru  + Anemia</td>
-                            <td>
-                              <strong>21/08/2020</strong>
-                              <br>21.00
-                            </td>
-                            <td><a href="#">AR</a></td>
-                            <td><button class="btn btn-success btn-sm">Detail</button></td>
-                          </tr>
-                        </tbody>
-                      </table>
+
+              <div class="calender-wrapper">
+                <div class="p-5">
+                  <h2 class="mb-4">Jadwal Operasi</h2>
+                  <div class="card">
+                    <div class="card-body p-0">
+                      <div id="calendar"></div>
                     </div>
                   </div>
                 </div>
+                
+                <!-- calendar modal -->
+                <div id="modal-view-event" class="modal modal-top fade calendar-modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="modal-title"><span class="event-icon"></span><span class="event-title"></span></h4>
+                          <div class="event-body"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div id="modal-view-event-add" class="modal modal-top fade calendar-modal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <form id="add-event">
+                        <div class="modal-body">
+                        <h4>Add Event Detail</h4>        
+                          <div class="form-group">
+                            <label>Event name</label>
+                            <input type="text" class="form-control" name="ename">
+                          </div>
+                          <div class="form-group">
+                            <label>Event Date</label>
+                            <input type='text' class="datetimepicker form-control" name="edate">
+                          </div>        
+                          <div class="form-group">
+                            <label>Event Description</label>
+                            <textarea class="form-control" name="edesc"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label>Event Color</label>
+                            <select class="form-control" name="ecolor">
+                              <option value="fc-bg-default">fc-bg-default</option>
+                              <option value="fc-bg-blue">fc-bg-blue</option>
+                              <option value="fc-bg-lightgreen">fc-bg-lightgreen</option>
+                              <option value="fc-bg-pinkred">fc-bg-pinkred</option>
+                              <option value="fc-bg-deepskyblue">fc-bg-deepskyblue</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Event Icon</label>
+                            <select class="form-control" name="eicon">
+                              <option value="circle">circle</option>
+                              <option value="cog">cog</option>
+                              <option value="group">group</option>
+                              <option value="suitcase">suitcase</option>
+                              <option value="calendar">calendar</option>
+                            </select>
+                          </div>        
+                      </div>
+                        <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" >Save</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>        
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal View Event Add -->
+                
               </div>
             </div>
             <!-- END CHAT SUPPORT -->
@@ -297,44 +295,16 @@
   </div>
   <!-- END WRAPPER -->
 
-  <!-- Vendor -->
-  <script src="../../assets/js/vendor.min.js"></script>
+  <script src="../../assets/plugins/full-calendar/jquery.min.js"></script>
+  <script src="../../assets/plugins/full-calendar/popper.min.js"></script>
+  <script src="../../assets/plugins/full-calendar/bootstrap.min.js"></script>
+  <script src="../../assets/plugins/full-calendar/moment.js"></script>
+  <script src="../../assets/plugins/full-calendar/fullcalendar.js"></script>
+  <script src="../../assets/plugins/full-calendar/air-datepicker.js"></script>
+  <!-- <script src="../../assets/plugins/full-calendar/datepicker.id.js"></script> -->
+  <script src="../../assets/plugins/full-calendar/datepicker.en.js"></script>
+  <script src="../../assets/plugins/full-calendar/calendar.js"></script>
 
-  <!-- Plugins -->
-  <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
-  <script src="../../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
-  <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.masked.min.js"></script>
-  <script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script> <!-- required by datepicker plugin -->
-  <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.datepicker.min.js"></script>
-  <script src="../../assets/plugins/jqvmap/jquery.vmap.min.js"></script>
-  <script src="../../assets/plugins/jqvmap/maps/jquery.vmap.world.js"></script>
-  <script src="../../assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-  <script src="../../assets/plugins/flot/jquery.canvaswrapper.js"></script>
-  <script src="../../assets/plugins/flot/jquery.colorhelpers.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.saturated.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.browser.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.drawSeries.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.uiConstants.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.resize.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.legend.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.hover.js"></script>
-  <script src="../../assets/plugins/flot/jquery.flot.time.js"></script>
-  <script src="../../assets/plugins/jquery.flot.tooltip/jquery.flot.tooltip.min.js"></script>
-  <script src="../../assets/plugins/justgage/raphael.min.js"></script>
-  <script src="../../assets/plugins/justgage/justgage.min.js"></script>
-  <script src="../../assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
-  <script src="../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
-  <script src="../../assets/plugins/jquery.appear/jquery.appear.js"></script>
-  <script src="../../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-  <script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-  <!-- <script src="../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.js"></script> -->
 
-  <!-- Init -->
-  <script src="../../assets/js/pages/dashboard.init.js"></script>
-  <script src="../../assets/js/pages/ui-dragdroppanel.init.min.js"></script>
-
-  <!-- App -->
-  <script src="../../assets/js/app.min.js"></script>
 </body>
 </html>

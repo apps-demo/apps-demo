@@ -90,7 +90,7 @@ jQuery(document).ready(function(){
 					description: 'Adeno Ca recti metas paru  + Anemia',
 					dpjp: 'AR',
 					start: '2020-08-21T21:00:00',
-					end: '2020-08-22T00:30:00',
+					end: '2020-08-22T23:30:00',
 					className: 'fc-bg-deepskyblue',
 					icon : "user",
 					allDay: false

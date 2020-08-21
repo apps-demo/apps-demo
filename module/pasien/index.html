@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
   <!-- jQuery UI required by datepicker editable -->
   <link href="../../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
@@ -57,40 +58,32 @@
     <div id="sidebar-nav" class="sidebar">
       <nav>
         <!-- <ul class="nav" id="sidebar-nav-menu">
-          <li class="menu-group">Modul</li>
-          <li><a href="../jadwal/index.html" class=""><i class="ti-user"></i> <span class="title">Jadwal Operasi</span></a></li>
-          <li><a href="../dpjp/index.html" class=""><i class="ti-user"></i> <span class="title">DPJP</span></a></li>
-          <li><a href="../ppds/index.html" class=""><i class="ti-user"></i> <span class="title">PPDS</span></a></li>
-          <li><a href="../diagnosa/index.html" class=""><i class="ti-heart-broken"></i> <span class="title">Diagnosa</span></a></li>
-          <li><a href="../ruang/index.html" class=""><i class="ti-briefcase"></i> <span class="title">Ruangan</span></a></li>
-        </ul> -->
+          <li class="menu-group text-white">Rawat Darurat/Rawat Jalan</li>
+          <li><a href="forms-registrasi-igd-irj.html" class=""><i class="ti-home"></i> <span class="title">Registrasi Pasien</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-desktop"></i> <span class="title">Data Pasien IRJ/IGD</span></a></li>
 
-        <ul class="nav" id="sidebar-nav-menu">
-          <li class="menu-group text-white">Pasien</li>
-          <li><a href="../pasien/registrasi.html" class=""><i class="ti-notepad"></i> <span class="title">Registrasi Pasien</span></a></li>
-          <li><a href="../pasien/index.html" class=""><i class="ti-user"></i> <span class="title">Data Pasien</span></a></li>
-          
-          <li class="menu-group text-white">Jadwal</li>
-          <li><a href="../jadwal/index.html" class=""><i class="ti-calendar"></i> <span class="title">Jadwal Operasi</span></a></li>
+          <li class="menu-group text-white">Rawat Inap</li>
+          <li><a href="typography.html" class=""><i class="ti-home"></i> <span class="title">Pendaftaran Rawat Inap</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-desktop"></i> <span class="title">Data Pasien IRNA</span></a></li>
 
           <li class="menu-group text-white">Konfigurasi Data Master</li>
-          <li><a href="../poli/index.html" class=""><i class="ti-check-box"></i> <span class="title">Poli</span></a></li>
-          <li><a href="../dpjp/index.html" class=""><i class="ti-check-box"></i> <span class="title">Dokter</span></a></li>
-          <li><a href="../ppds/index.html" class=""><i class="ti-check-box"></i> <span class="title">PPDS</span></a></li>
-          <li><a href="../diagnosa/index.html" class=""><i class="ti-check-box"></i> <span class="title">Diagnosa</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-check-box"></i> <span class="title">Poli</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-check-box"></i> <span class="title">Dokter</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-check-box"></i> <span class="title">PPDS</span></a></li>
+          <li><a href="typography.html" class=""><i class="ti-check-box"></i> <span class="title">Diagnosa</span></a></li>
           <li class="panel">
             <a href="#subPages" data-toggle="collapse" data-parent="#sidebar-nav-menu" aria-expanded="" class=""><i class="ti-check-box"></i> <span class="title">Ruang</span> <i class="icon-submenu ti-angle-left"></i></a>
             <div id="subPages" class="collapse  ">
               <ul class="submenu">
-                <li><a href="../ruang/index.html" class="">Gedung</a></li>
-                <li><a href="../ruang/index.html">Bangsal</a></li>
-                <li><a href="../ruang/index.html">Kamar</a></li>
-                <li><a href="../ruang/index.html">Bed</a></li>
+                <li><a href="page-profile.html" class="">Gedung</a></li>
+                <li><a href="page-login.html">Bangsal</a></li>
+                <li><a href="page-login.html">Kamar</a></li>
+                <li><a href="page-login.html">Bed</a></li>
               </ul>
             </div>
           </li>
-          <li><a href="../../typography.html" class=""><i class="ti-paragraph"></i> <span class="title">Typography</span></a></li>
-        </ul>
+          <li><a href="typography.html" class=""><i class="ti-paragraph"></i> <span class="title">Typography</span></a></li>
+        </ul> -->
         <!-- <button type="button" class="btn-toggle-minified" title="Toggle Minified Menu"><i class="ti-arrows-horizontal"></i></button> -->
       </nav>
     </div>
@@ -104,26 +97,64 @@
 
         <div class="content-heading">
           <div class="heading-left">
-            <h1 class="page-title">Welcome to Apps</h1>
-            <p class="page-subtitle">Homescreen</p>
+            <h1 class="page-title">Data Pasien</h1>
+            <p class="page-subtitle">Bootstrap admin dashboard template with drag and drop panel.</p>
           </div>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="../core/index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Parent</a></li>
+              <li class="breadcrumb-item active">Current</li>
+            </ol>
           </nav>
         </div>
 
         <div class="container-fluid">
 
-          <div class="row">
+          <div class="row sortable-grid">
             <!-- CHAT SUPPORT -->
-            <div class="col-md-12">
-              <div class="card">
-                <h3 class="card-header">Home</h3>
-                <div class="card-body">
-                  Welcome to navigation page, click sidebar on the left to go.
-                </div>
+            <div class="col-md-12 sortable-item">
+              <!-- BASIC DATATABLE -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Data Pasien yang sedang dirawat:</h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="datatable-basic" class="table table-hover table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Nama</th>
+                      <th>Tanggal Lahir</th>
+                      <th>DPJP</th>
+                      <th>Tanggal Masuk</th>
+                      <th>Tindakan</th>
+                      <th>Diagnosa</th>
+                      <th>RAD</th>
+                      <th>LAB</th>
+                      <th>Daftarkan IRNA</th>
+                      <th>PULANGKAN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Fulanah binti Fulan</td>
+                      <td>01 September 1990</td>
+                      <td>Dr. Fulan</td>
+                      <td>18 Agustus 2020</td>
+                      <td><a href="" class="btn btn-sm btn-primary"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-danger"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-success"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-warning"><i class="ti ti-pencil-alt"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-primary"><i class="ti ti-home"></i></a></td>
+                      <td><a href="" class="btn btn-sm btn-info"><i class="ti ti-back-right"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </div>
+          </div>
+          <!-- END BASIC DATATABLE -->
             </div>
             <!-- END CHAT SUPPORT -->
           </div>
@@ -259,6 +290,9 @@
 
   <!-- Vendor -->
   <script src="../../assets/js/vendor.min.js"></script>
+  <!-- Datables Core -->
+  <script src="../../assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
+  <script src="../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
 
   <!-- Plugins -->
   <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
@@ -293,6 +327,7 @@
   <!-- Init -->
   <script src="../../assets/js/pages/dashboard.init.js"></script>
   <script src="../../assets/js/pages/ui-dragdroppanel.init.min.js"></script>
+  <script src="../../assets/js/pages/tables-dynamic.init.min.js"></script>
 
   <!-- App -->
   <script src="../../assets/js/app.min.js"></script>

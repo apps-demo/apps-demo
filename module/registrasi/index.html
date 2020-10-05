@@ -82,8 +82,12 @@
                     <div class="row sortable-grid">
                         <!-- CHAT SUPPORT -->
                         <div class="col-lg-12 sortable-item">
+                            <small class="text-muted"># {{ activeForm }}</small>
+
                             <tab-2 :active-form="activeForm" @goto-form="gotoForm"></tab-2>
                             <tab-3 :active-form="activeForm" @goto-form="gotoForm"></tab-3>
+                            <tab-4 :active-form="activeForm" @goto-form="gotoForm"></tab-4>
+                            <tab-5 :active-form="activeForm" @goto-form="gotoForm"></tab-5>
 
                             <div class="card">
                                 <!-- <h3 class="card-header">Registrasi Pasien</h3> -->
@@ -102,12 +106,12 @@
                                 <form-3-2 :is-show="isFormOn(FORMS.FORM_3_2)"></form-3-2>
                                 <form-3-3 :is-show="isFormOn(FORMS.FORM_3_3)"></form-3-3>
 
-                                <!-- <form-4-0 :is-show="isFormOn(FORMS.FORM_4_0)"></form-4-0> -->
-                                <!-- <form-4-1 :is-show="isFormOn(FORMS.FORM_4_1)"></form-4-1> -->
-                                <!-- <form-4-2 :is-show="isFormOn(FORMS.FORM_4_2)"></form-4-2> -->
+                                <form-4-0 :is-show="isFormOn(FORMS.FORM_4_0)"></form-4-0>
+                                <form-4-1 :is-show="isFormOn(FORMS.FORM_4_1)"></form-4-1>
+                                <form-4-2 :is-show="isFormOn(FORMS.FORM_4_2)"></form-4-2>
 
-                                <!-- <form-5-0 :is-show="isFormOn(FORMS.FORM_5_0)"></form-5-0> -->
-                                <!-- <form-5-1 :is-show="isFormOn(FORMS.FORM_5_1)"></form-5-1> -->
+                                <form-5-0 :is-show="isFormOn(FORMS.FORM_5_0)"></form-5-0>
+                                <form-5-1 :is-show="isFormOn(FORMS.FORM_5_1)"></form-5-1>
                             </div>
                         </div>
                         <!-- END CHAT SUPPORT -->
@@ -163,6 +167,8 @@
         <script src="component/tab-back.js"></script>
         <script src="component/tab-2.js"></script>
         <script src="component/tab-3.js"></script>
+        <script src="component/tab-4.js"></script>
+        <script src="component/tab-5.js"></script>
 
         <script src="component/form-1.js"></script>
         <script src="component/form-2-0.js"></script>
@@ -176,11 +182,11 @@
         <script src="component/form-3-1.js"></script>
         <script src="component/form-3-2.js"></script>
         <script src="component/form-3-3.js"></script>
-        <!-- <script src="component/form-4-0.js"></script> -->
-        <!-- <script src="component/form-4-1.js"></script> -->
-        <!-- <script src="component/form-4-2.js"></script> -->
-        <!-- <script src="component/form-5-0.js"></script> -->
-        <!-- <script src="component/form-5-1.js"></script> -->
+        <script src="component/form-4-0.js"></script>
+        <script src="component/form-4-1.js"></script>
+        <script src="component/form-4-2.js"></script>
+        <script src="component/form-5-0.js"></script>
+        <script src="component/form-5-1.js"></script>
 
 
         <script src="registrasi.js"></script>

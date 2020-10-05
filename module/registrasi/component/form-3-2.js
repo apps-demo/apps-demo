@@ -39,14 +39,14 @@ var templateVar = `
       <div class="form-group row">
           <label for="foto_mri" class="col-4 col-form-label">Foto MRI</label>
           <div class="col-8">
-          <input id="foto_mri" name="foto_mri" placeholder="Pilih File ..." type="text" class="form-control" aria-describedby="foto_mriHelpBlock">
+          <input id="foto_mri" name="foto_mri" placeholder="Pilih File ..." type="file" class="form-control" aria-describedby="foto_mriHelpBlock">
           <span id="foto_mriHelpBlock" class="form-text text-muted"></span>
           </div>
       </div>
       <div class="form-group row">
           <label for="expertise_radiologi" class="col-4 col-form-label">Expertise Radiologi</label>
           <div class="col-8">
-          <input id="expertise_radiologi" name="expertise_radiologi" placeholder="Pilih File ..." type="text" class="form-control" aria-describedby="expertise_radiologiHelpBlock">
+          <input id="expertise_radiologi" name="expertise_radiologi" placeholder="Pilih File ..." type="file" class="form-control" aria-describedby="expertise_radiologiHelpBlock">
           <span id="expertise_radiologiHelpBlock" class="form-text text-muted"></span>
           </div>
       </div>
@@ -67,13 +67,8 @@ var templateVar = `
       <div class="form-group row">
           <label for="foto_rontgen_lainnya" class="col-4 col-form-label">Foto Rontgen Lainnya</label>
           <div class="col-8">
-          <input id="foto_rontgen_lainnya" name="foto_rontgen_lainnya" type="text" aria-describedby="foto_rontgen_lainnyaHelpBlock" class="form-control">
+          <input id="foto_rontgen_lainnya" name="foto_rontgen_lainnya" type="file" aria-describedby="foto_rontgen_lainnyaHelpBlock" class="form-control">
           <span id="foto_rontgen_lainnyaHelpBlock" class="form-text text-muted"></span>
-          </div>
-      </div>
-      <div class="form-group row">
-          <div class="offset-4 col-8">
-          <button name="submit" type="submit" class="btn btn-primary">Submit</button>
           </div>
       </div>
   </form>
@@ -85,8 +80,6 @@ Vue.component('form-3-2', {
   props: ['isShow'],
   data() {
     return {
-      // checked: false,
-      // title: 'Check me'
     }
   },
   methods: {

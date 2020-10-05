@@ -153,7 +153,7 @@ var templateVar = `
                   </div>
               </div>
               <div>
-                  <button class="btn btn btn-primary">RADIOLOGI</button>
+                  <button class="btn btn btn-primary" @click="gotoForm('FORM_3_0')">RADIOLOGI</button>
                   <br><br>
               </div>
               <div class="form-group row">
@@ -165,7 +165,7 @@ var templateVar = `
                   </div>
               </div>
               <div>
-                  <button class="btn btn btn-primary">OPERASI</button>
+                  <button class="btn btn btn-primary" @click="gotoForm('FORM_4_0')">OPERASI</button>
                   <br><br>
               </div>
               <div class="form-group row">
@@ -185,7 +185,7 @@ var templateVar = `
                   </div>
               </div>
               <div>
-                  <button class="btn btn btn-primary">KLINIS SETELAH OP</button>
+                  <button class="btn btn btn-primary" @click="gotoForm('FORM_5_0')">KLINIS SETELAH OP</button>
                   <br><br>
               </div>
               <div class="form-group row">

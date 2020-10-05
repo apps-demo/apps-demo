@@ -94,8 +94,6 @@ Vue.component('form-3-0', {
   props: ['isShow'],
   data() {
     return {
-      // checked: false,
-      // title: 'Check me'
     }
   },
   methods: {

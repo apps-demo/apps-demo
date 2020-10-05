@@ -1,150 +1,385 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <title>Dashboard | Sistem Informasi Bedah</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Dashboard | Sistem Informasi Bedah</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-  <!-- jQuery UI required by datepicker editable -->
-  <link href="../../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery UI required by datepicker editable -->
+    <link href="../../../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
-  <!-- Bootstrap Tour css -->
-  <link href="../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Tour css -->
+    <link href="../../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.min.css" rel="stylesheet"
+        type="text/css" />
 
-  <!-- App css -->
-  <link href="../../assets/css/bootstrap-custom.min.css" rel="stylesheet" type="text/css" />
-  <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="../../../assets/css/bootstrap-custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">
 </head>
+
 <body>
-  <!-- WRAPPER -->
-  <div id="wrapper">
+    <!-- WRAPPER -->
+    <div id="wrapper">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand fixed-top">
-      <div class="navbar-brand d-none d-lg-block">
-        <a href="index.html"><img src="../../assets/images/logo-white.png" alt="Klorofil Pro Logo" class="img-fluid logo"></a>
-      </div>
-      <div class="container-fluid p-0">
-        <button id="tour-fullwidth" type="button" class="btn btn-default btn-toggle-fullwidth"><i class="ti-menu"></i></button>
-        <div id="navbar-menu">
-          <ul class="nav navbar-nav align-items-center">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://i.imgur.com/M701HZb.jpg" class="user-picture"" alt="Avatar"> <span>Samuel</span></a>
-              <ul class="dropdown-menu dropdown-menu-right logged-user-menu">
-                <li><a href="#"><i class="ti-user"></i> <span>My Profile</span></a></li>
-                <li><a href="appviews-inbox.html"><i class="ti-email"></i> <span>Message</span></a></li>
-                <li><a href="#"><i class="ti-settings"></i> <span>Settings</span></a></li>
-                <li><a href="page-lockscreen.html"><i class="ti-power-off"></i> <span>Logout</span></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- END NAVBAR -->
-
-    <!-- LEFT SIDEBAR -->
-    <div id="sidebar-nav" class="sidebar">
-      <nav>
-        <!-- <button type="button" class="btn-toggle-minified" title="Toggle Minified Menu"><i class="ti-arrows-horizontal"></i></button> -->
-      </nav>
-    </div>
-    <!-- END LEFT SIDEBAR -->
-
-    <!-- MAIN -->
-    <div class="main">
-
-      <!-- MAIN CONTENT -->
-      <div class="main-content">
-
-        <div class="content-heading">
-          <div class="heading-left">
-            <h1 class="page-title">Welcome to Apps</h1>
-            <p class="page-subtitle">Registrasi Pasien</p>
-          </div>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../core/index.html"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active">Formulir Data Pasien</li>
-            </ol>
-          </nav>
-        </div>
-
-        <div id="vue-app" class="container-fluid">
-
-          <div class="row sortable-grid">
-            <!-- CHAT SUPPORT -->
-            <div class="col-lg-12 sortable-item">
-              <div class="card">
-                <h3 class="card-header">Registrasi Pasien</h3>
-                  <!-- ISI FORM DISINI -->
-                  <div class="card-body">
-                    Formulir Data Pasien
-                  
-                    <br><br>
-                    <button class="btn btn-primary">KLINIS</button>
-                    <br><br>
-                    <button class="btn btn-primary">RADIOLOGI</button>
-                    <br><br>
-                    <button class="btn btn-primary">OPERASI</button>
-                    <br><br>
-                    <button class="btn btn-primary">KLINIS SETELAH OP</button>
-                  </div>
-                  <!-- /. ISI FORM DISINI -->
-              </div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand fixed-top">
+            <div class="navbar-brand d-none d-lg-block">
+                <a href="index.html"><img src="../../../assets/images/logo-white.png" alt="Klorofil Pro Logo"
+                        class="img-fluid logo"></a>
             </div>
-            <!-- END CHAT SUPPORT -->
-          </div>
+            <div class="container-fluid p-0">
+                <button id="tour-fullwidth" type="button" class="btn btn-default btn-toggle-fullwidth"><i
+                        class="ti-menu"></i></button>
+                <div id="navbar-menu">
+                    <ul class="nav navbar-nav align-items-center">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img
+                                    src="https://i.imgur.com/M701HZb.jpg" class="user-picture"" alt=" Avatar">
+                                <span>Samuel</span></a>
+                            <ul class="dropdown-menu dropdown-menu-right logged-user-menu">
+                                <li><a href="#"><i class="ti-user"></i> <span>My Profile</span></a></li>
+                                <li><a href="appviews-inbox.html"><i class="ti-email"></i> <span>Message</span></a></li>
+                                <li><a href="#"><i class="ti-settings"></i> <span>Settings</span></a></li>
+                                <li><a href="page-lockscreen.html"><i class="ti-power-off"></i> <span>Logout</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+
+        <!-- LEFT SIDEBAR -->
+        <div id="sidebar-nav" class="sidebar">
+            <nav>
+                <!-- <button type="button" class="btn-toggle-minified" title="Toggle Minified Menu"><i class="ti-arrows-horizontal"></i></button> -->
+            </nav>
         </div>
-      </div>
-      <!-- END MAIN CONTENT -->
+        <!-- END LEFT SIDEBAR -->
+
+        <!-- MAIN -->
+        <div class="main">
+
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+
+                <div class="content-heading">
+                    <div class="heading-left">
+                        <h1 class="page-title">Welcome to Apps</h1>
+                        <p class="page-subtitle">Registrasi Pasien</p>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../core/index.html"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">Formulir Data Pasien</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div id="vue-app" class="container-fluid">
+
+                    <div class="row sortable-grid">
+                        <!-- CHAT SUPPORT -->
+                        <div class="col-12 sortable-item">
+                            <div class="card">
+                                <h3 class="card-header">Registrasi Pasien</h3>
+                                <!-- ISI FORM DISINI -->
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Keluhan Utama Sesuai Kronologis</label>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_0" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_0" class="custom-control-label">Nyeri
+                                                                Kepala kronis progresif</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_1" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_1" class="custom-control-label">Muntah
+                                                                proyektil</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_2" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_2"
+                                                                class="custom-control-label">Vertigo</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_3" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_3" class="custom-control-label">Parese
+                                                                N. VII</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_4" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_4"
+                                                                class="custom-control-label">Tuli</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_5" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_5"
+                                                                class="custom-control-label">Penurunan Visus</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_6" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_6"
+                                                                class="custom-control-label">Anosmia</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_7" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_7"
+                                                                class="custom-control-label">Hemianospia
+                                                                Bitemporal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_8" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_8"
+                                                                class="custom-control-label">Diplopia</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_9" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_9"
+                                                                class="custom-control-label">Nistagmus</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_10" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_10"
+                                                                class="custom-control-label">Penurunan Kesadaran</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_11" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_11"
+                                                                class="custom-control-label">Kejang</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_12" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_12"
+                                                                class="custom-control-label">Hemiparese</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_13" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_13"
+                                                                class="custom-control-label">Proptosis</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_14" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_14" class="custom-control-label">Parese
+                                                                N. III, IV, VI</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_15" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_15"
+                                                                class="custom-control-label">Perubahan
+                                                                Kepribadian</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_16" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_16" class="custom-control-label">Afasia
+                                                                (Broca, Wernicke, Transkortikal
+                                                                Sensorik/Motorik/Global)</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_17" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_17"
+                                                                class="custom-control-label">Inkontinesia Uri &
+                                                                Alvi</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_18" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_18" class="custom-control-label">Nyeri
+                                                                Punggung bawah menjajar</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_19" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_19" class="custom-control-label">Nyeri
+                                                                pada tulang belakang</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_20" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_20"
+                                                                class="custom-control-label">Monoparese/Paraparese
+                                                                (kekuatan motorik berapa?)</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_21" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_21" class="custom-control-label">Mati
+                                                                rasa pada kedua tungkai</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_22" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_22" class="custom-control-label">Tidak
+                                                                dapat menahan BAK dan BAB</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_23" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_23"
+                                                                class="custom-control-label">Ginekomasia</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_24" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_24"
+                                                                class="custom-control-label">Galaktorrhea</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_25" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_25"
+                                                                class="custom-control-label">Hipertiroidisme</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-controls-stacked">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="checkbox" id="checkbox_26" type="checkbox"
+                                                                class="custom-control-input" value="">
+                                                            <label for="checkbox_26"
+                                                                class="custom-control-label">Keluhan lain:</label>
+                                                        </div>
+                                                        <input id="text" name="text" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /. ISI FORM DISINI -->
+                            </div>
+                        </div>
+                        <!-- END CHAT SUPPORT -->
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT -->
+
+        </div>
+        <!-- END MAIN -->
+
+        <div class="clearfix"></div>
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <p class="copyright">&copy; 2020 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>.
+                    All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- end footer -->
 
     </div>
-    <!-- END MAIN -->
+    <!-- END WRAPPER -->
 
-    <div class="clearfix"></div>
-    
-    <!-- footer -->
-    <footer>
-      <div class="container-fluid">
-        <p class="copyright">&copy; 2020 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
-      </div>
-    </footer>
-    <!-- end footer -->
+    <!-- Vendor -->
+    <script src="../../../assets/js/vendor.min.js"></script>
 
-  </div>
-  <!-- END WRAPPER -->
+    <!-- Plugins -->
+    <script src="../../../assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
+    <script src="../../../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
+    <script src="../../../assets/plugins/jquery-jeditable/jquery.jeditable.masked.min.js"></script>
+    <script src="../../../assets/plugins/jquery-ui/jquery-ui.min.js"></script> <!-- required by datepicker plugin -->
+    <script src="../../../assets/plugins/jquery-jeditable/jquery.jeditable.datepicker.min.js"></script>
+    <script src="../../../assets/plugins/justgage/raphael.min.js"></script>
+    <script src="../../../assets/plugins/justgage/justgage.min.js"></script>
+    <script src="../../../assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
+    <script src="../../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/jquery.appear/jquery.appear.js"></script>
+    <script src="../../../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="../../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- <script src="../../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.js"></script> -->
 
-  <!-- Vendor -->
-  <script src="../../assets/js/vendor.min.js"></script>
+    <!-- Init -->
+    <script src="../../../assets/js/pages/dashboard.init.js"></script>
 
-  <!-- Plugins -->
-  <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
-  <script src="../../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
-  <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.masked.min.js"></script>
-  <script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script> <!-- required by datepicker plugin -->
-  <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.datepicker.min.js"></script>
-  <script src="../../assets/plugins/justgage/raphael.min.js"></script>
-  <script src="../../assets/plugins/justgage/justgage.min.js"></script>
-  <script src="../../assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
-  <script src="../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
-  <script src="../../assets/plugins/jquery.appear/jquery.appear.js"></script>
-  <script src="../../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-  <script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-  <!-- <script src="../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.js"></script> -->
-
-  <!-- Init -->
-  <script src="../../assets/js/pages/dashboard.init.js"></script>
-
-  <!-- App -->
-  <script src="../../assets/js/app.min.js"></script>
+    <!-- App -->
+    <script src="../../../assets/js/app.min.js"></script>
 
 </body>
+
 </html>

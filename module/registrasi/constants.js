@@ -1,0 +1,47 @@
+var FORMS = {
+  FORM_1: "FORM_1",
+  FORM_2_0: "FORM_2_0",
+  FORM_2_1: "FORM_2_1",
+  FORM_2_2: "FORM_2_2",
+  FORM_2_3: "FORM_2_3",
+  FORM_2_4: "FORM_2_4",
+  FORM_2_5: "FORM_2_5",
+  FORM_2_6: "FORM_2_6",
+  FORM_3_0: "FORM_3_0",
+  FORM_3_1: "FORM_3_1",
+  FORM_3_2: "FORM_3_2",
+  FORM_3_3: "FORM_3_3",
+  FORM_4_0: "FORM_4_0",
+  FORM_4_1: "FORM_4_1",
+  FORM_4_2: "FORM_4_2",
+  FORM_5_0: "FORM_5_0",
+  FORM_5_1: "FORM_5_1"
+}
+
+var FORMS_2 = [
+  FORMS.FORM_2_0,
+  FORMS.FORM_2_1,
+  FORMS.FORM_2_2,
+  FORMS.FORM_2_3,
+  FORMS.FORM_2_4,
+  FORMS.FORM_2_5,
+  FORMS.FORM_2_6,
+]
+
+var FORMS_3 = [
+  FORMS.FORM_3_0,
+  FORMS.FORM_3_1,
+  FORMS.FORM_3_2,
+  FORMS.FORM_3_3,
+]
+
+var FORMS_4 = [
+  FORMS.FORM_4_0,
+  FORMS.FORM_4_1,
+  FORMS.FORM_4_2,
+]
+
+var FORMS_5 = [
+  FORMS.FORM_5_0,
+  FORMS.FORM_5_1
+]

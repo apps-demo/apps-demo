@@ -7,20 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
         <!-- jQuery UI required by datepicker editable -->
-        <link href="../../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Bootstrap Tour css -->
-        <link href="../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.min.css" rel="stylesheet" type="text/css" />
 
         <!-- App css -->
-        <link href="../../assets/css/bootstrap-custom.min.css" rel="stylesheet" type="text/css" />
-        <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../../assets/css/bootstrap-custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../../assets/images/favicon.png">
     </head>
     <body>
     <!-- WRAPPER -->
@@ -29,7 +29,7 @@
             <!-- NAVBAR -->
             <nav class="navbar navbar-expand fixed-top">
                 <div class="navbar-brand d-none d-lg-block">
-                    <a href="index.html"><img src="../../assets/images/logo-white.png" alt="Klorofil Pro Logo" class="img-fluid logo"></a>
+                    <a href="index.html"><img src="../../../assets/images/logo-white.png" alt="Klorofil Pro Logo" class="img-fluid logo"></a>
                 </div>
                 <div class="container-fluid p-0">
                     <button id="tour-fullwidth" type="button" class="btn btn-default btn-toggle-fullwidth"><i class="ti-menu"></i></button>
@@ -84,75 +84,59 @@
                     <div class="col-lg-12 sortable-item">
                     <div class="card">
                         <h3 class="card-header">WBXRT/Radioterapi</h3>
-                        <form>
-                            <div class="form-group row">
-                                <label for="text" class="col-4 col-form-label">Text Field</label>
-                                <div class="col-8">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                    <div class="input-group-text">
-                                        <i class="fa fa-address-card"></i>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="tgl_radiologi_pertama" class="col-4 col-form-label">Tgl Radiologi Pertama</label>
+                                    <div class="col-8">
+                                    <input id="tgl_radiologi_pertama" name="tgl_radiologi_pertama" type="text" class="form-control" aria-describedby="tgl_radiologi_pertamaHelpBlock">
+                                    <span id="tgl_radiologi_pertamaHelpBlock" class="form-text text-muted"></span>
                                     </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="rs_tempat_radioterapi" class="col-4 col-form-label">RS Tempat Radioterapi</label>
+                                    <div class="col-8">
+                                    <input id="rs_tempat_radioterapi" name="rs_tempat_radioterapi" type="text" class="form-control" aria-describedby="rs_tempat_radioterapiHelpBlock">
+                                    <span id="rs_tempat_radioterapiHelpBlock" class="form-text text-muted"></span>
                                     </div>
-                                    <input id="text" name="text" type="text" class="form-control">
                                 </div>
+                                <div class="form-group row">
+                                    <label for="target_jumlah_radioterapi_dalam_1_siklus" class="col-4 col-form-label">Target Jumlah Radioterapi  Dalam 1 Siklus</label>
+                                    <div class="col-8">
+                                    <input id="target_jumlah_radioterapi_dalam_1_siklus" name="target_jumlah_radioterapi_dalam_1_siklus" type="text" class="form-control" aria-describedby="target_jumlah_radioterapi_dalam_1_siklusHelpBlock">
+                                    <span id="target_jumlah_radioterapi_dalam_1_siklusHelpBlock" class="form-text text-muted"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="tgl_radiologi_pertama" class="col-4 col-form-label">Tgl Radiologi Pertama</label>
-                                <div class="col-8">
-                                <input id="tgl_radiologi_pertama" name="tgl_radiologi_pertama" type="text" class="form-control" aria-describedby="tgl_radiologi_pertamaHelpBlock">
-                                <span id="tgl_radiologi_pertamaHelpBlock" class="form-text text-muted"></span>
+                                <div class="form-group row">
+                                    <label for="dosis_radioterapi_yang_digunakan" class="col-4 col-form-label">Dosis Radioterapi Yang Digunakan</label>
+                                    <div class="col-8">
+                                    <input id="dosis_radioterapi_yang_digunakan" name="dosis_radioterapi_yang_digunakan" type="text" class="form-control" aria-describedby="dosis_radioterapi_yang_digunakanHelpBlock">
+                                    <span id="dosis_radioterapi_yang_digunakanHelpBlock" class="form-text text-muted"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="rs_tempat_radioterapi" class="col-4 col-form-label">RS Tempat Radioterapi</label>
-                                <div class="col-8">
-                                <input id="rs_tempat_radioterapi" name="rs_tempat_radioterapi" type="text" class="form-control" aria-describedby="rs_tempat_radioterapiHelpBlock">
-                                <span id="rs_tempat_radioterapiHelpBlock" class="form-text text-muted"></span>
+                                <div class="form-group row">
+                                    <label for="fraksi_radioterapi_yang_digunakan" class="col-4 col-form-label">Fraksi Radioterapi Yang Digunakan</label>
+                                    <div class="col-8">
+                                    <input id="fraksi_radioterapi_yang_digunakan" name="fraksi_radioterapi_yang_digunakan" type="text" class="form-control" aria-describedby="fraksi_radioterapi_yang_digunakanHelpBlock">
+                                    <span id="fraksi_radioterapi_yang_digunakanHelpBlock" class="form-text text-muted"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="target_jumlah_radioterapi_dalam_1_siklus" class="col-4 col-form-label">Target Jumlah Radioterapi  Dalam 1 Siklus</label>
-                                <div class="col-8">
-                                <input id="target_jumlah_radioterapi_dalam_1_siklus" name="target_jumlah_radioterapi_dalam_1_siklus" type="text" class="form-control" aria-describedby="target_jumlah_radioterapi_dalam_1_siklusHelpBlock">
-                                <span id="target_jumlah_radioterapi_dalam_1_siklusHelpBlock" class="form-text text-muted"></span>
+                                <div class="form-group row">
+                                    <label for="klinis_pre_radioterapi" class="col-4 col-form-label">Klinis Pre Radioterapi</label>
+                                    <div class="col-8">
+                                    <input id="klinis_pre_radioterapi" name="klinis_pre_radioterapi" type="text" class="form-control" aria-describedby="klinis_pre_radioterapiHelpBlock">
+                                    <span id="klinis_pre_radioterapiHelpBlock" class="form-text text-muted"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="dosis_radioterapi_yang_digunakan" class="col-4 col-form-label">Dosis Radioterapi Yang Digunakan</label>
-                                <div class="col-8">
-                                <input id="dosis_radioterapi_yang_digunakan" name="dosis_radioterapi_yang_digunakan" type="text" class="form-control" aria-describedby="dosis_radioterapi_yang_digunakanHelpBlock">
-                                <span id="dosis_radioterapi_yang_digunakanHelpBlock" class="form-text text-muted"></span>
+                                <div class="form-group row">
+                                    <label for="jenis_radioterapi" class="col-4 col-form-label">Jenis Radioterapi</label>
+                                    <div class="col-8">
+                                    <input id="jenis_radioterapi" name="jenis_radioterapi" type="text" class="form-control" aria-describedby="jenis_radioterapiHelpBlock">
+                                    <span id="jenis_radioterapiHelpBlock" class="form-text text-muted"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="fraksi_radioterapi_yang_digunakan" class="col-4 col-form-label">Fraksi Radioterapi Yang Digunakan</label>
-                                <div class="col-8">
-                                <input id="fraksi_radioterapi_yang_digunakan" name="fraksi_radioterapi_yang_digunakan" type="text" class="form-control" aria-describedby="fraksi_radioterapi_yang_digunakanHelpBlock">
-                                <span id="fraksi_radioterapi_yang_digunakanHelpBlock" class="form-text text-muted"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="klinis_pre_radioterapi" class="col-4 col-form-label">Klinis Pre Radioterapi</label>
-                                <div class="col-8">
-                                <input id="klinis_pre_radioterapi" name="klinis_pre_radioterapi" type="text" class="form-control" aria-describedby="klinis_pre_radioterapiHelpBlock">
-                                <span id="klinis_pre_radioterapiHelpBlock" class="form-text text-muted"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="jenis_radioterapi" class="col-4 col-form-label">Jenis Radioterapi</label>
-                                <div class="col-8">
-                                <input id="jenis_radioterapi" name="jenis_radioterapi" type="text" class="form-control" aria-describedby="jenis_radioterapiHelpBlock">
-                                <span id="jenis_radioterapiHelpBlock" class="form-text text-muted"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-4 col-8">
-                                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     </div>
                     <!-- END CHAT SUPPORT -->
@@ -178,33 +162,33 @@
         <!-- END WRAPPER -->
 
         <!-- Vendor -->
-        <script src="../../assets/js/vendor.min.js"></script>
+        <script src="../../../assets/js/vendor.min.js"></script>
 
         <!-- Plugins -->
-        <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
-        <script src="../../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
-        <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.masked.min.js"></script>
-        <script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script> <!-- required by datepicker plugin -->
-        <script src="../../assets/plugins/jquery-jeditable/jquery.jeditable.datepicker.min.js"></script>
-        <script src="../../assets/plugins/justgage/raphael.min.js"></script>
-        <script src="../../assets/plugins/justgage/justgage.min.js"></script>
-        <script src="../../assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
-        <script src="../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
-        <script src="../../assets/plugins/jquery.appear/jquery.appear.js"></script>
-        <script src="../../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-        <script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <!-- <script src="../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.js"></script> -->
+        <script src="../../../assets/plugins/jquery-jeditable/jquery.jeditable.min.js"></script>
+        <script src="../../../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
+        <script src="../../../assets/plugins/jquery-jeditable/jquery.jeditable.masked.min.js"></script>
+        <script src="../../../assets/plugins/jquery-ui/jquery-ui.min.js"></script> <!-- required by datepicker plugin -->
+        <script src="../../../assets/plugins/jquery-jeditable/jquery.jeditable.datepicker.min.js"></script>
+        <script src="../../../assets/plugins/justgage/raphael.min.js"></script>
+        <script src="../../../assets/plugins/justgage/justgage.min.js"></script>
+        <script src="../../../assets/plugins/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../../../assets/plugins/datatables.net-bs4/dataTables.bootstrap4.min.js"></script>
+        <script src="../../../assets/plugins/jquery.appear/jquery.appear.js"></script>
+        <script src="../../../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="../../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <!-- <script src="../../../assets/plugins/bootstrap-tour/bootstrap-tour-standalone.js"></script> -->
 
         <!-- Init -->
-        <script src="../../assets/js/pages/dashboard.init.js"></script>
+        <script src="../../../assets/js/pages/dashboard.init.js"></script>
 
         <!-- App -->
-        <script src="../../assets/js/app.min.js"></script>
+        <script src="../../../assets/js/app.min.js"></script>
 
         <!-- Vue -->
-        <script src="../../assets/vue/vue@2.6.12dev.js"></script>
+        <script src="../../../assets/vue/vue@2.6.12dev.js"></script>
         <script src="component/form-1.js"></script>
         <script src="registrasi.js"></script>
-        <!-- <script src="../../assets/vue/vue@2.6.12prod.js"></script> -->
+        <!-- <script src="../../../assets/vue/vue@2.6.12prod.js"></script> -->
     </body>
 </html>

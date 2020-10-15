@@ -2,7 +2,7 @@ var templateVar = `
 <div class="card-body" v-show="isShow">
   <form>
       <div class="form-group row">
-          <label for="nama_operasi" class="col-4 col-form-label">Nama Operasi</label>
+          <label for="nama_operasi" class="col-4 col-form-label">Nama Tindakan</label>
           <div class="col-8">
           <input id="nama_operasi" name="nama_operasi" placeholder=" " type="text" class="form-control" aria-describedby="nama_operasiHelpBlock">
           <span id="nama_operasiHelpBlock" class="form-text text-muted"></span>

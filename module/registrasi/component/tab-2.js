@@ -8,13 +8,13 @@ var templateVar = `
         <a :class="['nav-link', isActiveOn('FORM_2_0')]" @click="gotoForm('FORM_2_0')" href="#">KELUHAN UMUM</a>
     </li>
     <li class="nav-item">
-        <a :class="['nav-link', isActiveOn('FORM_2_1')]" @click="gotoForm('FORM_2_1')" href="#">RIWAYAT PENYAKIT</a>
+        <a :class="['nav-link', isActiveOn('FORM_2_1')]" @click="gotoForm('FORM_2_1')" href="#">RIWAYAT PENYAKIT SEKARANG</a>
     </li>
     <li class="nav-item">
-        <a :class="['nav-link', isActiveOn('FORM_2_2')]" @click="gotoForm('FORM_2_2')" href="#">RIWAYAT PENYAKIT (2)</a>
+        <a :class="['nav-link', isActiveOn('FORM_2_2')]" @click="gotoForm('FORM_2_2')" href="#">RIWAYAT PENYAKIT DAHULU</a>
     </li>
     <li class="nav-item">
-        <a :class="['nav-link', isActiveOn('FORM_2_3')]" @click="gotoForm('FORM_2_3')" href="#">PEMERIKSAAN FISIK</a>
+        <a :class="['nav-link', isActiveOn('FORM_2_3')]" @click="gotoForm('FORM_2_3')" href="#">KEADAAN UMUM</a>
     </li>
     <li class="nav-item">
         <a :class="['nav-link', isActiveOn('FORM_2_4')]" @click="gotoForm('FORM_2_4')" href="#">PEMERIKSAAN FISIK (2)</a>
@@ -23,7 +23,7 @@ var templateVar = `
         <a :class="['nav-link', isActiveOn('FORM_2_5')]" @click="gotoForm('FORM_2_5')" href="#">PEMERIKSAAN FISIK (3)</a>
     </li>
     <li class="nav-item">
-        <a :class="['nav-link', isActiveOn('FORM_2_6')]" @click="gotoForm('FORM_2_6')" href="#">PEMERIKSAAN FISIK (4)</a>
+        <a :class="['nav-link', isActiveOn('FORM_2_6')]" @click="gotoForm('FORM_2_6')" href="#">NEUROLOGIS</a>
     </li>
 </ul>
 `

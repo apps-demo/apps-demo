@@ -118,7 +118,14 @@ var templateVar = `
               <br>
               <div class="form-group row">
                   <label for="text1" class="col-4 col-form-label">Tensi Darah</label>
-                  <div class="col-8">
+                  <div class="col-3">
+                    <input id="text1" name="text1" type="text"
+                    class="form-control">
+                  </div>
+                  <div class="col-1">
+                      /
+                  </div>
+                  <div class="col-4">
                       <div class="input-group">
                           <input id="text1" name="text1" type="text"
                               class="form-control">

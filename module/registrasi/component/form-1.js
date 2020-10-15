@@ -123,19 +123,6 @@ var templateVar = `
 
           <div class="col-6">
               <div class="form-group row">
-                  <label for="text6" class="col-4 col-form-label">Komplikasi</label>
-                  <div class="col-8">
-                      <input id="text6" name="text6" type="text" class="form-control">
-                  </div>
-              </div>
-              <div class="form-group row">
-                  <label for="text7" class="col-4 col-form-label">Penanganan
-                      Komplikasi</label>
-                  <div class="col-8">
-                      <input id="text7" name="text7" type="text" class="form-control">
-                  </div>
-              </div>
-              <div class="form-group row">
                   <label for="text8" class="col-4 col-form-label">Tgl Keluar
                       RS</label>
                   <div class="col-8">
@@ -187,6 +174,19 @@ var templateVar = `
               <div>
                   <button class="btn btn btn-primary" @click="gotoForm('FORM_5_0')">KLINIS SETELAH OP</button>
                   <br><br>
+              </div>
+              <div class="form-group row">
+                  <label for="text6" class="col-4 col-form-label">Komplikasi</label>
+                  <div class="col-8">
+                      <input id="text6" name="text6" type="text" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="text7" class="col-4 col-form-label">Penanganan
+                      Komplikasi</label>
+                  <div class="col-8">
+                      <input id="text7" name="text7" type="text" class="form-control">
+                  </div>
               </div>
               <div class="form-group row">
                   <label for="select5" class="col-4 col-form-label">Kondisi klinis

@@ -41,11 +41,6 @@ var templateVar = `
                               class="custom-control-input" value="">
                           <label for="radio_3" class="custom-control-label">4</label>
                       </div>
-                      <div class="custom-control custom-radio custom-control-inline">
-                          <input name="radio" id="radio_4" type="radio"
-                              class="custom-control-input" value="">
-                          <label for="radio_4" class="custom-control-label">5</label>
-                      </div>
                   </div>
               </div>
               <div class="form-group row">
@@ -105,6 +100,11 @@ var templateVar = `
                           <input name="radio2" id="radio2_4" type="radio"
                               class="custom-control-input" value="">
                           <label for="radio2_4" class="custom-control-label">5</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio2" id="radio2_5" type="radio"
+                              class="custom-control-input" value="">
+                          <label for="radio2_5" class="custom-control-label">6</label>
                       </div>
                   </div>
               </div>
